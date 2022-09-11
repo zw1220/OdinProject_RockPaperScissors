@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Water Ice</title>
+    <link rel="icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/b81b017b49.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Permanent+Marker&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="title">FIRE WATER ICE</h1>
+    </header>
+
+    <main class="main">
+
+      <div class="scoreboard">
+        <h2 class="score-info" id="scoreInfo">Choose your element</h2>
+        <h3 class="score-message" id="scoreMessage">First to score 5 points wins the game</h3>
+
+        <div class="scores-container">
+          <div class="score-box">
+            <img src="img/question-mark.png" class="sign1" id="playerSign">
+            <p class="score" id="playerScore">Player : 0</p>
+          </div>
+
+          <div class="score-box">
+            <img src="img/question-mark.png" class="sign1" id="computerSign">
+            <p class="score" id="computerScore">Computer : 0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn-square" id="fireBtn">
+          <img src="img/fire.png" alt="fire" class="sign2">
+          <p>FIRE</p>
+        </button>
+
+        <button class="btn btn-square" id="waterBtn">
+          <img src="img/water.png" alt="water" class="sign2">
+          <p>WATER</p>
+        </button>
+
+        <button class="btn btn-square" id="iceBtn">
+          <img src="img/ice.png" alt="ice" class="sign2">
+          <p>ICE</p>
+        </button>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p>Image by <a href="https://genshin.hoyoverse.com/en/" target="_blank">GENSHIN IMPACT</a></p>
+      <p>Copyright @ ziwei</p>
+      <i class="fa-brands fa-github"></i>
+    </footer>
+
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
